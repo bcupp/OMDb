@@ -18,7 +18,7 @@ app.controller('searchController', function($scope, $http) {
     $scope.userSearch = function(input) {
 
         //hide placeholder on search
-        $scope.hidePlaceholder = true;
+        $(".blankPlaceholder").hide(500);
 
 
         //API call that appends user input to URL to search OMDb
