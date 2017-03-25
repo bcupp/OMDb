@@ -1,14 +1,18 @@
 <div class="row">
-    <div class="col-md-6">
-        <h2>Search OMDb</h2>
+    <div class="col-md-12">
+        <h2>Search The OMDb</h2>
+        <div id="custom-search-input">
+        <form ng-submit="userSearch(userInput)">
         <div class="input-group col-md-12">
             <input type="text" class="form-control input-lg" placeholder="Movie or TV show title" ng-model='userInput' />
             <span class="input-group-btn">
-              <!-- on button click the information in the input is sent as perameters to userSearch function -->
+              <!-- on button click the information in the input is sent as parameters to userSearch function -->
               <button class="btn btn-info btn-lg" type="button" ng-click='userSearch(userInput)'>
                   <i class="glyphicon glyphicon-search"></i>
               </button>
             </span>
         </div>
+        </form>
+      </div>
     </div>
 </div>

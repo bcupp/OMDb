@@ -26,3 +26,12 @@ app.directive('searchResults', function(){
     templateUrl:"views/searchResults.html"
   };
 });
+
+//custom directive for placeholder above search bar on page load
+app.directive('blankSpace', function(){
+  return{
+    restrict:'EA',
+    replace: false,
+    templateUrl:"views/blankSpace.html"
+  };
+});

@@ -1,14 +1,16 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="resultsStyles" ng-class='hideShowClass'>
-      <p>Title: {{movieData.Title}}</p>
+      <h2>{{movieData.Title}}</h2>
+      <img class="posterStyles" src="{{movieData.Poster}}" alt="">
       <p>Release Date: {{movieData.Year}}</p>
       <p>Rating: {{movieData.Rated}}</p>
-      <p>Actors: {{movieData.Actors}}</p>
-      <img src="{{movieData.Poster}}" alt="">
+      <p>Runtime: {{movieData.Runtime}}</p>
+      <p>Cast: {{movieData.Actors}}</p>
+      <p>Plot: {{movieData.Plot}}</p>
     </div>
     <div>
-      <p ng-class="hideShowClassError">Sorry, there are no results for your search</p>
+      <p ng-class="hideShowClassError">Sorry, there are no results matching your search</p>
     </div>
   </div>
 </div>
