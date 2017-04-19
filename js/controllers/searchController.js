@@ -22,7 +22,7 @@ app.controller('searchController', function($scope, $http) {
 
 
         //API call that appends user input to URL to search OMDb
-        $http.get('http://www.omdbapi.com/?t=' + input)
+        $http.get('https://www.omdbapi.com/?t=' + input)
             .then(function(response) {
 
                 //saving JSON object to movieData variable
